@@ -17,11 +17,12 @@ h4 {font-size: 20px;}
 .message-col .message-header {display: block;color: #fff !important;border-radius: 0.325rem 0.325rem 0 0;padding:20px;}
 .message-col h2 {color: #ffffff;font-size: 30px;margin-top: 5px !important;}
 .section {padding: 0 1.5rem;}
-.navbar-menu .button.is-primary.is-outlined {font-size: 20px;height: 35px;line-height: normal;margin: 6px 0 0;padding: 0 10px;}
+.navbar-menu .button.is-primary.is-outlined {font-size: 20px;height: 35px;line-height: normal;margin: 0px 0 0;padding: 0 10px;}
 .navbar-menu .fa.fa-question {margin: 0 6px 0 0;}
 .navbar-menu .fa.fa-chevron-right, .navbar-menu .fa.fa-chevron-left {margin: 3px 0 0 10px;}
-.navbar-menu .navbar-item img {border: 1px solid #9d9d9d;border-radius: 100%;height: auto;margin: 0 10px 0 0;max-height: none;width: 45px;}
-.answer-box .button {font-size: 16px;height: auto;padding: 10px 20px;}
+.navbar-menu .navbar-item img {border: 1px solid #9d9d9d;border-radius: 100%;height: auto;margin: 0 10px 0 0;max-height: none;width: 35px;}
+.answer-box .button {font-size: 16px;height: auto;padding: 10px 20px;margin-right:10px;}
+
 /*.owl-stage {
 max-width: 100% !important;
 width: 100% !important;
