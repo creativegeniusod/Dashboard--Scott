@@ -78,6 +78,105 @@ button.hide-sidebar {background: rgba(0, 0, 0, 0) none repeat scroll 0 0;color: 
 .button.is-primary.is-outlined:hover {background: #17a65c !important;color: #ffffff;}
 .icon {height: auto;width: auto;}
 
+/*
+ 08 sept 2017
+======================*/
+/* modals style ----*/
+.navbar{z-index: 99;}
+.modal .close-btn{width: 32px;}
+.modal-content .btn-wrap{float: right; margin-top: -32px; width:32px;}
+.modal .modal-close{padding-left: 0px; right: auto; top:auto;}
+.modal-content .box {padding: 50px;}
+.modal-content .box h2{font-size: 25px; padding-bottom: 12px;}
+.modal-content .box p{font-size: 16px;}
+.modal-content .loan-table{font-size: 14px; border-spacing: 10px 5px;border-collapse: separate; width: calc(100% + 10px); margin: 0 0 10px -10px;}
+.modal-content .loan-table td{border-bottom: 1px solid #d2d9da; color:#090f10; font-size: 17px;}
+.modal-content .loan-table td span{color:#bfc5c6;}
+.modal-content .box .note-txt{font-size: 14px; color:#bcc2c4;font-style: italic; }
+.modal-content .add-more{font-size: 16px; text-decoration: underline;}
+.modal-content .add-more:hover{text-decoration: none;}
+.modal-content .button{font-size: 18px; height: 40px;}
+.inverse-btn{background: none !important; color:#98a2a4!important; text-decoration: underline;}
+.inverse-btn:hover{text-decoration: none; color:#98a2a4!important; border: none !important;}
+.responsive-table{overflow-x:auto;}
+.modal-content h3{font-size: 17px;}
+.modal-content .field{padding:0 0 15px 0; overflow: inherit;}
+.modal-content .field .select{width: 100%;}
+.modal-content input[type="text"], 
+.modal-content input[type="number"], 
+.modal-content input[type="email"], 
+.modal-content input[type="password"], 
+.modal-content .select select{ font-size: 16px; padding-left: 0px !important;}
+.select:not(.is-multiple){height: auto;}
+.modal-content .select:not(.is-multiple)::after{right:5px; top:49%;border-bottom-color:#a6acad; border-left-color:#a6acad; height: 10px; width: 10px;}
+.modal-content .select option{padding: 0px;}
+.modal-content .box .help{font-size: 12px; font-style: italic;}
+.modal-content .border-box{border: 1px  solid #d2d9da; border-radius: 5px; padding: 15px;}
+.modal-content .border-box p{font-size: 14px;}
+.green-txt{color: #008b47 !important;}
+.bg-img{background:url("../images/background-img.png") no-repeat bottom  center #fff; background-size: contain; }
+.align-center{ text-align: center;}
+.modal-content .control{font-size: 15px;}
+.modal-content input[type="radio"],  .modal-content input[type="checkbox"]{height: auto;}
+
+
+/* inner pages style ======*/
+.breadcrumb:not(:last-child){margin-bottom: 0px;}
+.breadcrumb li:first-child a{padding-left: 0px;}
+.navbar-end .dropdown-menu{left: auto; right: 0px;}
+.navbar-end .dropdown-menu .button{font-size: 14px; height: 30px; border-color:#a5aeb0; color:#a5aeb0;}
+.navbar-end .dropdown-menu .col{padding: 0 10px; }
+
+/*account setting 
+=============================*/
+.breadcrumb .is-active a{ text-decoration: underline;}
+.section.level-3 {margin-top: -150px;}
+
+.user-info .imgbox img{max-width: 86px; max-height: 86px; border: 1px solid #cbd3d4; border-radius: 100%; margin-right: 15px;}
+
+.user-info h2{font-size: 22px; font-weight: bold; margin: 10px 0 10px 0; color:#5a6263;}
+.user-info h4{font-size: 20px; color: #515a5b; font-weight: normal; margin: 0px;}
+.content .user-info p{margin: 15px 0 10px 0;color: #9a9d9d; font-size: 15px;}
+.user-info .field{padding: 10px 0;}
+.user-info .select select{height: auto; font-size: 16px; min-width: 300px; color: #9a9d9d;}
+.user-info .add-more{font-size: 13px;}
+.user-info h6, .contact-info h6{padding:15px 20px; font-size: 13px;color:#919494; border-bottom: 1px solid #eef1f2;margin: 0px;	}
+.tabs.vertical-align, .tabs.vertical-align ul{display: block; margin: 0px; padding: 0px; border: none;}
+.tabs.vertical-align {border-top: 4px solid #10a356;}
+.tabs.vertical-align ul li{text-align: left; font-size: 18px;}
+.tabs.vertical-align ul li a{display: block;padding: 12px  25px; position: relative;}
+.tabs.vertical-align .fa{font-size: 14px; font-weight: normal; position: absolute; right: 15px; top:18px;}
+.tabs.vertical-align ul li.is-active .fa{display: none;}
+.tab-content .title{position: absolute; bottom: 100%; margin-bottom: 10px !important;font-size: 1.7rem;}
+.contact-info{padding: 0px;font-size: 15px;}
+
+.contact-info p{font-size: 15px; }
+.contact-info .button{height: 40px; font-size: 14px;}
+.contact-info span{font-size: 13px; display: inline-block; vertical-align: middle; margin:10px 0 0 5px;}
+.content .noti-wrap{margin: 0px; list-style: none; margin: 0px;}
+.noti-wrap li{border-bottom: 1px solid #eef1f2; padding: 15px 20px; font-size: 16px;}
+.noti-wrap li a{float: right; text-decoration: underline;}
+.noti-wrap li a:hover{text-decoration: none;}
+.gray-txt{color:#d1d9da !important;}
+.modal-content label.checkbox{height: auto;}
+.noti-btn{font-size: 14px; text-decoration: underline;color:#d1d9da;}
+.noti-btn:hover{text-decoration: none; }
+.user-info small{color: #8b8f8f;}
+.modal-content .scroll-wrap { max-height: 50vh;  overflow-y: auto;}
+.modal-content .scroll-wrap p{font-size: 15px;}
+/* end here==========*/
+
+@media (max-width: 1024px){
+	.section.level-3{margin-top: 10px;}
+	.user-info .imgbox img{height: 50px; width: 50px; margin-right: 5px; margin-top: 10px;}
+	.user-info h2{font-size: 18px;}
+	.tabs.vertical-align ul li a{padding: 12px 15px;}
+	.content .user-info p{margin-top:10px;}
+	.user-info .select select{min-width: 225px;}
+	.tab-content .button{font-size: 17px;}
+}
+/* end here==========*/
+
 @media (min-width: 1025px){
 	.bg-content{height: 300px;}
 	.message-col .message-header .column {padding-left: 0;}
