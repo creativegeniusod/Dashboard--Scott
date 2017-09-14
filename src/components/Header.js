@@ -42,7 +42,7 @@ class Header extends React.Component {
 	    <h6>My Planswell acount</h6>
 			<ul>
 				<li>
-					<Link to='/account'>Account Settings</Link>
+					<Link to='/account'>Account settings</Link>
 					<i className="fa fa-arrow-right"></i>
 				</li>
 				<li>
@@ -65,9 +65,10 @@ class Header extends React.Component {
 					<textarea placeholder="What's on your mind?"></textarea>
 					<button className="button is-primary">Email Us</button>
 				</li>
-				<li className="no-border pt-0">Burning question that cans wait? Give us a call: 1-800-PLANSWELL</li>
+				<li className="no-border pt-0 call-us">Burning question that cans wait? Give us a call: <span>1-800-PLANSWELL</span></li>
 			</ul>
 	    </div>
+	    <div className="container">
             <nav className="navbar ">
 			  <div className="navbar-brand">
 				<Link to='/homeNew' className='navbar-item'> 
@@ -109,6 +110,7 @@ class Header extends React.Component {
 			  </div>
   	        </nav>
   	        </div>
+  	       </div>
         );
     }
   

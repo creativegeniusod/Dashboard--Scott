@@ -3,6 +3,8 @@ import { Switch, Route } from 'react-router-dom'
 import Home from '../views/Home'
 import Account from '../views/account'
 import HomeNew from '../views/HomeNew'
+import HomeBorrow from '../views/HomeBorrow'
+import Borrow from '../views/Borrow'
 
 // The Main component renders one of the three provided
 // Routes (provided that one matches). Both the /roster
@@ -12,9 +14,10 @@ import HomeNew from '../views/HomeNew'
 const Main = () => (
   <main>
     <Switch>
-      <Route exact path='/' component={Home}/>
+      <Route exact path='/' component={HomeBorrow}/>
       <Route path='/account' component={Account}/>
       <Route path='/homeNew' component={HomeNew}/>
+      <Route path='/borrow' component={Borrow}/>
     </Switch>
   </main>
 )
