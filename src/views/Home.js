@@ -39,17 +39,17 @@ class Home extends React.Component {
 									<div className="message-header">
 										<div className="full-width">										
 											<div className="col">
-											    <p className="white no-margin">Info <i className="fa fa-check pull-right"></i></p>
+											    <p className="white no-margin">Be an investor <i className="fa fa-check pull-right"></i></p>
 										    </div>
 										</div>
 									    <div className="columns pt-30">
 									    	<div className="column">
 									    		<small>Total value</small>
-									    		<h2>$47,148</h2>
+									    		<h2><div className="icon-currency">$</div>47,148</h2>
 									    	</div>
 									    	<div className="column">
 									    		<small>Time-weighted</small>
-									    		<h2>5.6%</h2>
+									    		<h2>5.6<div className="icon-currency">%</div></h2>
 									    	</div>
 									    </div>
 									</div>
@@ -57,9 +57,9 @@ class Home extends React.Component {
 					          	<table className="mb-0">
 								    <thead>
 								      <tr>
-								        <th>Account</th>
-								        <th>Total Value</th>
-								        <th>Growth</th>
+								        <td>Account</td>
+								        <td>Total Value</td>
+								        <td>Growth</td>
 								      </tr>
 								    </thead>
 								    <tbody>
@@ -86,13 +86,13 @@ class Home extends React.Component {
 									<div className="message-header">
 										<div className="full-width">										
 											<div className="col">
-											    <p className="white no-margin">Info <i className="fa fa-check pull-right"></i></p>
+											    <p className="white no-margin">Perfect yourself	 <i className="fa fa-check pull-right"></i></p>
 										    </div>
 										</div>
 									    <div className="columns pt-30">
 									    	<div className="column">
 									    		<small>Total Coverage</small>
-									    		<h2>$47,148</h2>
+									    		<h2><div className="icon-currency">$</div>650,000</h2>
 									    	</div>
 									    </div>
 									</div>
@@ -100,9 +100,9 @@ class Home extends React.Component {
 					          	<table>
 								    <thead>
 								      <tr>
-								        <th>Policy Type</th>
-								        <th>Total Value</th>
-								        <th>Coverage term</th>
+								        <td>Policy Type</td>
+								        <td>Total Value</td>
+								        <td>Coverage term</td>
 								      </tr>
 								    </thead>
 								    <tbody>
@@ -126,17 +126,17 @@ class Home extends React.Component {
 									<div className="message-header">
 										<div className="full-width">										
 											<div className="col">
-											    <p className="white no-margin">Info <i className="fa fa-check pull-right"></i></p>
+											    <p className="white no-margin">Borrow wisely <i className="fa fa-check pull-right"></i></p>
 										    </div>
 										</div>
 									    <div className="columns pt-30">
 									    	<div className="column">
 									    		<small>Value Owing</small>
-									    		<h2>$47,148</h2>
+									    		<h2><div className="icon-currency">$</div>714,000</h2>
 									    	</div>
 									    	<div className="column">
 									    		<small>Interest rate</small>
-									    		<h2>5.6%</h2>
+									    		<h2>4.65<div className="icon-currency">%</div></h2>
 									    	</div>
 									    </div>
 									</div>
@@ -144,9 +144,9 @@ class Home extends React.Component {
 					          	<table>
 								    <thead>
 								      <tr>
-								        <th>Debt Type</th>
-								        <th>Amount Paid</th>
-								        <th>Interest rate</th>
+								        <td>Debt Type</td>
+								        <td>Amount Paid</td>
+								        <td>Interest rate</td>
 								      </tr>
 								    </thead>
 								    <tbody>

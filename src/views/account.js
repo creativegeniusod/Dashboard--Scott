@@ -73,7 +73,7 @@ class Account extends React.Component {
 			    		<div className="column is-one-quarter">
 	      					<div className="box tabs vertical-align">	      						
 	      						<ul>
-	      							<li><a href="#" rel="tab1" onClick={e => this.setState({ tab: 1 })} >Account settings <i className="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+	      							<li className="active"><a href="#" rel="tab1" onClick={e => this.setState({ tab: 1 })} >Account settings <i className="fa fa-arrow-right" aria-hidden="true"></i></a></li>
 	      							<li><a href="#" rel="tab2" onClick={e => this.setState({ tab: 2 })}>Update your plan <i className="fa fa-arrow-right" aria-hidden="true"></i></a></li>
 	      							<li><a href="#" rel="tab3" onClick={e => this.setState({ tab: 3})} >Notification centre <i className="fa fa-arrow-right" aria-hidden="true"></i></a></li>
 	      							<li><a href="#" rel="tab4" onClick={e => this.setState({ tab: 4 })}>Referral program <i className="fa fa-arrow-right" aria-hidden="true"></i></a></li>

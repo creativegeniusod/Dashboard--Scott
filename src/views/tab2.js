@@ -16,7 +16,7 @@ class Tab2 extends React.Component {
 		      						<h1 className="title">Update your plan </h1>
 	      							<div className="box">
 	      								<p>In just a few minutes we’ll make sure that you're on track to hit your ﬁnancial goals now, and in the future. Let us know what's going on and we’ll update your plan to suit.</p>
-	      								<h4>Before we start, any major updates?</h4>
+	      								<p>Before we start, any major updates?</p>
 	      								<div className="field">							             
 							             <div className="control">
 							                <div className="select">
