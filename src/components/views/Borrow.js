@@ -1,8 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router'
 class Borrow extends React.Component {
- 
+	constructor(props) {
+		super(props);
+		var type = props.location.query.type ? props.location.query.type : "mystate";
+		this.state = {
+       	 	tab: type,
+       	};
+    }
+ 	
   render() {
+  		const {tab}=this.state;
         return (
        <div className="main-content">
        <section className="section bg-content level-1">
@@ -69,16 +77,38 @@ class Borrow extends React.Component {
 
                                   <ul>
 
-                                      <li className=""><a href="javascript:void(0)" rel="tab1">Account settings <i className="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+                                      <li className=""><a href="javascript:void(0)" onClick={e => this.setState({ tab: "mystate" })} rel="tab1">Manage statements <i className="fa fa-arrow-right" aria-hidden="true"></i></a>
+	                                      	{
+	                                      	 	tab== "mystate" ?
+							   					<ul className="" ><li>Account performance report</li><li>Account agreement document</li><li>Transfer document</li></ul>:
+							   					null
+	                                     	}
+                                    	
+                                      </li>
 
-                                      <li><a href="javascript:void(0)" rel="tab2">Update your plan <i className="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+                                      <li><a href="javascript:void(0)" onClick={e => this.setState({ tab: "account" })} rel="tab2">Account history <i className="fa fa-arrow-right" aria-hidden="true"></i></a>
+                                      		{
+	                                      		tab== "account" ?
+							   					<ul className="" ><li>Deposite</li><li>Transfer</li><li>Dividends</li></ul>:
+							   					null
+	                                      	}
+                                      </li>
 
-                                      <li><a href="javascript:void(0)" rel="tab3">Notification centre <i className="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+                                      <li><a href="javascript:void(0)" onClick={e => this.setState({ tab: "fund" })} rel="tab3">Fund my account <i className="fa fa-arrow-right" aria-hidden="true"></i></a>
+                                      		{
+	                                      	 	tab== "fund" ?
+							   					<div className="" >tab1</div>:
+							   					null
+	                                      	}
+                                      </li>
 
-                                      <li><a href="javascript:void(0)" rel="tab4">Referral program <i className="fa fa-arrow-right" aria-hidden="true"></i></a></li>
-
-                                      <li><a href="javascript:void(0)" rel="tab5">Log out <i className="fa fa-arrow-right" aria-hidden="true"></i></a></li>
-
+                                      <li><a href="javascript:void(0)" onClick={e => this.setState({ tab: "withdrawal" })} rel="tab4">Withdrawal funds <i className="fa fa-arrow-right" aria-hidden="true"></i></a>
+                                      		{
+		                                      	tab== "withdrawal" ?
+								   				<div className="" >tab1</div>:
+								   				null
+		                                    }
+                                      </li>
                                   </ul>
 
                               </div>

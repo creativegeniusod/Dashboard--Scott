@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router'
 
 class Tab5 extends React.Component { 
     componentDidMount() {    

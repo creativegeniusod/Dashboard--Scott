@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router'
 
 class Tab extends React.Component { 
        
@@ -18,7 +18,7 @@ class Tab extends React.Component {
 							<div className="columns">
 								<div className="column is-4">	      							
 									<figure className="pull-left imgbox">
-										<img src="images/user-big.png" />
+										<img src="static/images/user-big.png" />
 									</figure>
 									<div className="grid">
 										<h2>Chris Baldesara</h2>

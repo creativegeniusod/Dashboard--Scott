@@ -217,16 +217,20 @@ class HomeNew extends React.Component {
                                     <div className="responsive-table">
                                       <table className="table loan-table">
                                         <thead>
+                                        <tr>
                                           <th>Original loan value</th>
                                           <th>Interest rate</th>
                                           <th>Total mortgage paid</th>
                                           <th>Amortization</th> 
+                                          </tr>
                                         </thead>
                                         <tbody>
+                                        <tr>
                                           <td><span>$</span>470,000</td>
                                           <td>4.65<span>%</span></td>
                                           <td><span>$</span>46,000</td>
-                                          <td>35years</td>                  
+                                          <td>35years</td>    
+                                          </tr>              
                                         </tbody>
                                       </table>
                                     </div>

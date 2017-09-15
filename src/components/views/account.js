@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router'
 import Tab from './tab';
 import Tab2 from './tab2';
 import Tab3 from './tab3';
@@ -25,8 +25,6 @@ class Account extends React.Component {
             $('.show-sidebar').removeClass('sidebar-active').next('.fa').removeClass('fa-chevron-left').addClass('fa-chevron-right');
         }
         
-        
-        
     componentDidMount() {
         this.handleHide();
       }          
@@ -40,7 +38,7 @@ class Account extends React.Component {
 				<div className="col">
 					<nav className="breadcrumb is-small has-succeeds-separator" aria-label="breadcrumbs">
 					  <ul>
-					    <li><Link to='/'>home</Link></li>
+					    <li><Link to='/'>Home</Link></li>
 					    <li className="is-active"><a href="#" aria-current="page">Account setting</a></li>
 					  </ul>
 					</nav>
