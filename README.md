@@ -1,11 +1,6 @@
-## React Example
+# react-about-me
+author: [krithix](https://twitter.com/krithix)
 
-### Development
+A simple multi-page webapp using React, react-router, Webpack, and Express (with support for babel and SASS).
 
-```
-npm install
-npm run nodemon
-npm run webpack
-```
-
-Server will be running on [http://localhost:8080/](http://localhost:8080/)
+A full write up and guide is available on [this Medium post](https://medium.com/@krithix/multi-page-website-with-react-in-2017-f6f2af326526).
