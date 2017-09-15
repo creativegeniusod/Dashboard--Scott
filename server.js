@@ -1,25 +1,33 @@
-import config from './config';
-import sassMiddleware from 'node-sass-middleware';
-import path from 'path';
-import express from 'express';
-import bodyParser from 'body-parser';
+var path = require('path');
+var bodyParser = require('body-parser');
+var express = require('express');
+var webpack = require('webpack');
+var config = require('./webpack.config.dev.js');
 
-const server = express();
-server.use(bodyParser.json());
+var app = express();
+var compiler = webpack(config);
 
-server.use(sassMiddleware({
-  src: path.join(__dirname, 'sass'),
-  dest: path.join(__dirname, 'public')
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
+app.use(require('webpack-dev-middleware')(compiler, {
+  noInfo: true,
+  publicPath: config.output.publicPath
 }));
+app.use('/static', express.static(path.join(__dirname, 'static')))
+app.use(require('webpack-hot-middleware')(compiler));
 
-server.set('view engine', 'ejs');
+app.use('/public', express.static('public'));
 
-server.get('/', (req, res) => {
-  res.render('index');
+app.get('*', function(req, res) {
+  res.sendFile(path.resolve(__dirname, 'index.html'));
 });
 
-server.use(express.static('public'));
+app.listen(process.env.PORT || 5000, function(err) {
+  if (err) {
+    console.log(err);
+    return;
+  }
 
-server.listen(config.port, config.host, () => {
-  console.info('Express listening on port', config.port);
+  console.log('Listening at http://localhost:5000');
 });
