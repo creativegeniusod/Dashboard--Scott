@@ -761,25 +761,29 @@ textarea::placeholder {
   .product-row {padding: 0 20px;}
   .product-description a {color: #a5aeb0;text-decoration: underline;}
   .product-description strong {font-weight: normal;}
-  .borrow-bg1{background: #f5faf7 url("/static/images/borrow-bg1.png") no-repeat scroll right center;padding: 70px 20px !important;background-size: cover;
-  -o-background-size: cover;-moz-background-size: cover;-webkit-background-size: cover;}
+  .borrow-bg1{background: url("/static/images/borrow-bg1.png") no-repeat scroll top center;padding: 70px 20px !important;}
   .column.custom-flex {flex: 0 1 0;}
   .mtg-table .fa.fa-download {margin: 7px 10px 0 0;}
-  h5.warning-color {color: #db9d30;}
+  h5.warning-color, .warning-color {color: #db9d30;text-decoration: underline;}
+  .button.is-warning {background:#db9d30;}
   .brand-box .tabs.vertical-align {border: none;}
 
 
   .message-col .box.tabs.vertical-align {border: none;}
 
 
-  .container {max-width: 1170px}
+  .container {max-width: 1080px;}
   .white{color: #fff !important;}
+  .black{color: #000000 !important;}
   .no-border{border: none !important;}
   .message-col table th {color: #949797 !important;font-size: 16px;font-weight: normal;padding: 5px 10px;}
   .message-col .tabs.vertical-align ul li a {font-size: 16px;}
+  .up-doc-row {border-bottom: 1px solid #ededed;}
+  .text-right {text-align: right;}
+  .full-width{width:100%;}
   .borrow-list { display: none; }
   .warning-title { color: #db9d30; }
-  .fa.fa-mobile {color: #db9d30; font-size: 24px; margin-right: 10px;}
+  .fa.fa-mobile {color: #db9d30; font-size: 24px; margin-right: 10px; transform: rotate(315deg);}
   /*MTG Table Style Ends*/
 
 .button.is-warning {
