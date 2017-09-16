@@ -13,7 +13,7 @@ class Borrow extends React.Component {
   		const {tab}=this.state;
         return (
        <div className="main-content">
-       <section className="section bg-content level-1">
+       <section className="section bg-content level-1 no-padding">
 			<div className="container">
 				<div className="col">
 					<nav className="breadcrumb is-small has-succeeds-separator" aria-label="breadcrumbs">
@@ -28,7 +28,7 @@ class Borrow extends React.Component {
 			</div>
 
 		
-		<section className="section bg-content level-1 borrow-bg1">
+		<section className="section bg-content level-1 borrow-bg1 no-padding">
 			<div className="container">
 				<div className="columns">
 			      	<div className="column">
@@ -59,7 +59,7 @@ class Borrow extends React.Component {
 								    </tr>
 								    <tr>
 								    	<td>
-								    		<button className="button is-primary is-outlined"><i className="fa fa-upload"></i> &nbsp;&nbsp; Uploads Documents</button>
+								    		<button className="button is-primary is-outlined is-small"><i className="fa fa-upload"></i> &nbsp;&nbsp; Uploads Documents</button>
 								    	</td>
 								    	<td></td>
 								    </tr>
@@ -69,10 +69,9 @@ class Borrow extends React.Component {
 			      	</div>
 			      	<div className="column is-one-third">
 			        	<div className="box no-padding brand-box">
-			        		<div className="message is-warning mb-0">
+			        		<div className="message message is-info mb-0">
                           		<div className="message-header"></div>
                           	</div>
-                          	<h5 className="warning-color">My mortgage lender</h5>
                           	<div className="box tabs vertical-align">                                  
 
                                   <ul>
@@ -80,7 +79,7 @@ class Borrow extends React.Component {
                                       <li className=""><a href="javascript:void(0)" onClick={e => this.setState({ tab: "mystate" })} rel="tab1">Manage statements <i className="fa fa-arrow-right" aria-hidden="true"></i></a>
 	                                      	{
 	                                      	 	tab== "mystate" ?
-							   					<ul className="" ><li>Account performance report</li><li>Account agreement document</li><li>Transfer document</li></ul>:
+							   					<ul className="" ><li><i className="fa fa-check green-btn"></i>Account performance report</li><li><i className="fa fa-check green-btn"></i>Account agreement document</li><li><i className="fa custom-icon"></i>Transfer document</li></ul>:
 							   					null
 	                                     	}
                                     	
@@ -89,7 +88,7 @@ class Borrow extends React.Component {
                                       <li><a href="javascript:void(0)" onClick={e => this.setState({ tab: "account" })} rel="tab2">Account history <i className="fa fa-arrow-right" aria-hidden="true"></i></a>
                                       		{
 	                                      		tab== "account" ?
-							   					<ul className="" ><li>Deposite</li><li>Transfer</li><li>Dividends</li></ul>:
+							   					<ul className="" ><li><i className="fa fa-check green-btn"></i>Deposite</li><li><i className="fa fa-check green-btn"></i>Transfer</li><li><i className="fa fa-check green-btn"></i>Dividends</li></ul>:
 							   					null
 	                                      	}
                                       </li>

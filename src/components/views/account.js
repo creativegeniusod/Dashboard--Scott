@@ -16,13 +16,9 @@ class Account extends React.Component {
         }
         
         
-        handleHide() {
-			$(".right-nav").animate({width: 'toggle'});
-            $("body").animate({right: "0"}, 400);
-            $('.show-sidebar').css({'opacity':'1'});
-            $('body').removeClass('add-overlay');
-            $('body').css({'overflow':'visible'});
-            $('.show-sidebar').removeClass('sidebar-active').next('.fa').removeClass('fa-chevron-left').addClass('fa-chevron-right');
+       handleHide() {
+            document.body.classList.remove('add-overlay');
+            document.body.classList.remove('slideout');
         }
         
     componentDidMount() {

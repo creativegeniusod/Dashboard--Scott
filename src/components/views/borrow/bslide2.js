@@ -1,19 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router'
-	
-class Bslide extends React.Component {    
 
+class Bslide2 extends React.Component { 
+    
   render() {
-  	//console.log(this.props.currentState)
+	    
         return (
 			       <div className="swiper-container">
                       <div className="message is-warning">
                           <div className="message-header"></div>
                         <div className="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
+                            <a href="#" className="swiper-pagination-bullet bold"></a>
                             <a href="#" className="swiper-pagination-bullet"></a>
                             <a href="#" className="swiper-pagination-bullet"></a>
                             <a href="#" className="swiper-pagination-bullet"></a>
-                            <a href="#" className="swiper-pagination-bullet swiper-pagination-bullet-active"></a>
+                            <a href="#" className="swiper-pagination-bullet"></a>
+                            <a href="#" className="swiper-pagination-bullet"></a>
+                            <a href="#" className="swiper-pagination-bullet"></a>
                         </div>
                       </div>
                       <div className="swiper-wrapper">
@@ -21,14 +24,14 @@ class Bslide extends React.Component {
                             <article className="message">
                                 <div className="box">
                                   <p className="warning-title">Borrow wisely</p>
-                                <h4>You're seven steps away from a fully funded mortgage.</h4>
+                                <h4>Let's start off with few mortgage questions to understand you needs</h4>
+                                <p>This should only take 10-15 minutes.</p>
                                 </div>
                             </article>
                             <div className="col btn-sec pt-0">
-                                <a className="button is-warning is-outlined" onClick={this.props.currentState} >
-                                  <span>Get Started</span> 
+                                <a className="button is-warning" onClick={this.props.currentState} >
+                                  <span>Fill out questionnaire</span> 
                                 </a>
-                                <span className="pull-right">i already have a mortgage</span>
                             </div>
                           </div>
                       </div>
@@ -38,4 +41,4 @@ class Bslide extends React.Component {
   
 }
 
-export default Bslide;
+export default Bslide2;

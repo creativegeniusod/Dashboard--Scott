@@ -11,18 +11,14 @@ class Tab3 extends React.Component {
             show: false,
            };
         }
-	   
-	   
+          
     componentDidMount() {    
+      
       }      
-      
-      
-      showModel() {
-			$("body").addClass('is-clipped');
+      showModel() {;
 			this.setState({ show: true });
         }
       hideModel() {
-			$("body").removeClass('is-clipped');
 			this.setState({ show: false });
         }     
                      

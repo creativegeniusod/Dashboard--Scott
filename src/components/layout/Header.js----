@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router'
 
 class Header extends React.Component {
 	
@@ -72,7 +72,7 @@ class Header extends React.Component {
             <nav className="navbar ">
 			  <div className="navbar-brand">
 				<Link to='/homeNew' className='navbar-item'> 
-				<img src="images/planswell-logo-green.png" />		
+				<img src="static/images/planswell-logo-green.png" />		
 				</Link>
 				<div className="navbar-burger burger" >
 				   <span></span>
@@ -100,7 +100,7 @@ class Header extends React.Component {
 
 					  
 					  <Link to='#' className='navbar-item' onClick={this.handleShow}> 
-						<img src="images/user.png" />
+						<img src="static/images/user.png" />
 						<span className="show-sidebar" >Chris Baldesara</span>
 						<i className="fa fa-chevron-right"></i>
 					  </Link>

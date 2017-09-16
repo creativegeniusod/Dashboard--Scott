@@ -6,6 +6,7 @@ import Account from './components/views/account';
 import HomeNew from './components/views/HomeNew';
 import HomeBorrow from './components/views/HomeBorrow';
 import Borrow from './components/views/Borrow';
+import Mortgage from './components/views/borrow/mortgage.js';
 
 
 
@@ -15,6 +16,7 @@ export default (
     <Route path='account' component={Account}/>
      <Route path='homeNew' component={HomeNew}/>
      <Route path='borrow' component={Borrow}/>
+     <Route path='mortgage' component={Mortgage}/>
     <Route path='*' component={Home} />
   </Route>
 );

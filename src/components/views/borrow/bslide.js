@@ -1,16 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router'
+	
+class Bslide extends React.Component {    
 
-class Bslide4 extends React.Component { 
-       
-        
-        
-    componentDidMount() {
-      
-      }          
-            
   render() {
-	    
+  	//console.log(this.props.currentState)
         return (
 			       <div className="swiper-container">
                       <div className="message is-warning">
@@ -19,7 +13,10 @@ class Bslide4 extends React.Component {
                             <a href="#" className="swiper-pagination-bullet"></a>
                             <a href="#" className="swiper-pagination-bullet"></a>
                             <a href="#" className="swiper-pagination-bullet"></a>
-                            <a href="#" className="swiper-pagination-bullet swiper-pagination-bullet-active"></a>
+                            <a href="#" className="swiper-pagination-bullet"></a>
+                            <a href="#" className="swiper-pagination-bullet"></a>
+                            <a href="#" className="swiper-pagination-bullet"></a>
+                            <a href="#" className="swiper-pagination-bullet"></a>
                         </div>
                       </div>
                       <div className="swiper-wrapper">
@@ -27,10 +24,15 @@ class Bslide4 extends React.Component {
                             <article className="message">
                                 <div className="box">
                                   <p className="warning-title">Borrow wisely</p>
-                                <h4>We've reviewed your questionnaire and we're finding the best mortgage to suit your needs</h4>
-                                <p><a onClick={this.props.currentState} > <i className="fa fa-mobile"></i></a> Expect to a call  to review within 1-2 days.</p>
+                                <h4>You're seven steps away from a fully funded mortgage.</h4>
                                 </div>
                             </article>
+                            <div className="col btn-sec pt-0">
+                                <a className="button is-warning is-outlined" onClick={this.props.currentState} >
+                                  <span>Get Started</span> 
+                                </a>
+                                <span className="pull-right already-mortgage">i already have a mortgage</span>
+                            </div>
                           </div>
                       </div>
                   </div>
@@ -39,4 +41,4 @@ class Bslide4 extends React.Component {
   
 }
 
-export default Bslide4;
+export default Bslide;

@@ -9,33 +9,50 @@ class Header extends React.Component {
         this.handleHide = this.handleHide.bind(this);
         this.state = {
             display: false,
+            hide: 'hideN',
+            sidebar: 'fa-chevron-right',
+            sidebarActive: false,
+            opacity: false,
         };
     }
-    handleShow() {
-		$('.show-sidebar').addClass('sidebar-active').next('.fa').removeClass('fa-chevron-right').addClass('fa-chevron-left');
-		$(".right-nav").animate({width: 'toggle'});
-		$('body').addClass('add-overlay');
-		$('body').animate({right: "400px"}, 400).css({"overflow":"hidden"});
-		$('body').css({'overflow':'hidden'});
+    handleShow(e) {
+		e.preventDefault();
+       this.setState({
+          hide: 'showN',
+          sidebar: 'fa-chevron-left',
+          sidebarActive: true,
+          opacity: false,
+        });
+		document.body.classList.add('add-overlay');
+		document.getElementById("navDiv").className ='right-nav';
+		document.body.style.overflow = "hidden";
+		document.body.classList.add('slideout');
+		document.body.classList.remove('slidein');
+		
     }
     
     handleHide() {
-        $(".right-nav").animate({width: 'toggle'});
-        $("body").animate({right: "0"}, 400);
-        $('.show-sidebar').css({'opacity':'1'});
-        $('body').removeClass('add-overlay');
-        $('body').css({'overflow':'visible'});
-        $('.show-sidebar').removeClass('sidebar-active').next('.fa').removeClass('fa-chevron-left').addClass('fa-chevron-right');
+		this.setState({
+          hide: 'hideN',
+          sidebar: 'fa-chevron-right',
+          sidebarActive: false,
+          opacity: true,
+        }); 
+        document.body.classList.remove('add-overlay');
+		document.body.style.overflow = "visible";	
+		document.body.classList.remove('slideout');
+		document.body.classList.add('slidein');
     }
     
 	
  
   render() {
-	  
-	   const {display} = this.state;
+	   const {display, hide, sidebar, sidebarActive, opacity} = this.state;
         return (
         <div>
-        <div style={{display: "none"}} className="right-nav">
+        
+     
+        <div id='navDiv' className={`right-nav`}>
 		<div className="navbar-header">
 	        <button className="navbar-toggle hide-sidebar" type="button" onClick={this.handleHide}>X</button>
 	    </div>
@@ -96,13 +113,11 @@ class Header extends React.Component {
 					  <Link to='#' className='button is-primary is-outlined'> <i className="fa fa-question"></i>Help </Link>
 					  
 					</li>
-					<li>
-
-					  
+					<li>  
 					  <Link to='#' className='navbar-item' onClick={this.handleShow}> 
 						<img src="static/images/user.png" />
-						<span className="show-sidebar" >Chris Baldesara</span>
-						<i className="fa fa-chevron-right"></i>
+						<span className= {`show-sidebar ${sidebarActive ? 'sidebar-active' : ''} ${opacity ? 'opacity' : ''}`} >Chris Baldesara</span>
+						<i className={`fa ${sidebar}`}></i>
 					  </Link>
 					</li>
 				  </ul>

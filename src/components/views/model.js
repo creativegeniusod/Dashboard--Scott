@@ -11,9 +11,9 @@ class Model extends React.Component {
       }          
             
   render() {
-	    const cl=this.props.show ? 'modal is-active' : "modal";
+	  
         return (
-    <div id="modal-1" className={cl}>
+    <div id="modal-1" className="modal is-active" style={{ display: `${this.props.show ? 'flex' : 'none'}`}}>
   <div className="modal-background" onClick={this.props.hide}></div> 
   <div className="modal-content ">
     <div className="btn-wrap">
