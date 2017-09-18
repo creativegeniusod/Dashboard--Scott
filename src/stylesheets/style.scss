@@ -210,7 +210,8 @@ h6.warning-title {
   margin-bottom: 10px; }
 
 .detialed-box .btn-sec {
-  padding: 20px; }
+  padding: 20px;
+  border-top:0px; }
 
 .section.level-2 {
   margin-top: -60px; }
@@ -810,10 +811,12 @@ textarea::placeholder {
 .up-doc-row.columns .column.text-right{padding:0px;}
 label.error { color: #D66639; float: left; width: 100%;}
 .button.is-warning.white.disabled { background-color: #f4daad; border: 1px solid #f4daad !important;}
-.fa.fa-clock-o.step7 {  color: #db9d30; font-size: 22px; margin-right: 6px;}
+.fa.fa-clock-o { font-size: 22px; margin-right: 6px;}
+.fa-clock-o.step7{ color: #db9d30;}
 .fa.fa-check.green-btn.pull-right.complete { font-size: 12px; margin: 12px 10px;}
 .swiper-pagination-bullet.bold { border-color: #c38822; box-shadow: 0 0 0 1px #ffbd47 inset; opacity: 1;}
 .banner-bg1{background:url("/static/images/banner-img2.png") no-repeat scroll center top; padding: 10px 0 !important;}
+.banner-bg.documents{padding: 10px 0 !important;}
 .section.banner-bg1 .title{color: #899092; font-weight: bold;}
 
 .up-doc-row.columns{display:block; padding:10px 20px}
@@ -870,6 +873,13 @@ opacity:1;
 .withdraw-hist .column:empty{padding: 0px;}
 .withdraw-hist .green-txt{font-style: italic;}
 .no-padding .withdraw-hist { margin: 0; padding: 0;}
+.document-type a.active{ color: #DB9D30; }
+.document-type a{ color: #949797; }
+.message-header.first{padding:20px;}
+.detialed-box.message-col .button { display: inline-block;}
+.danger-title { color: #e5622e;}
+.detialed-box .button.first-slide { display: table; margin: 0 auto;}
+.info-title{color:#3273DC;}
 
 
 @media (min-width: 769px) {

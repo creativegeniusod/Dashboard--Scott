@@ -1,0 +1,6 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Link to fetch>UID>.INBOX>650
+Type=Link
+URL=imap://simar%40ourdesignz%2Ein@rsj21.rhostjh.com:993/fetch%3EUID%3E.INBOX%3E650
+Icon=text-html

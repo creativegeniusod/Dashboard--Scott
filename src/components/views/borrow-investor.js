@@ -1,11 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router'
+import InvestSlide1 from './investor/inv-slide1.js';
+import InvestSlide2 from './investor/inv-slide2.js';
+import InvestSlide3 from './investor/inv-slide3.js';
+import InvestSlide4 from './investor/inv-slide4.js';
+import InvestSlide5 from './investor/inv-slide5.js';
+import InvestSlide6 from './investor/inv-slide6.js';
+import InvestSlide7 from './investor/inv-slide7.js';
 class BorrowInvestor extends React.Component {
  	constructor(props) {
 		super(props);
-		this.handelPopup = this.handelPopup.bind();
+		this.handelPopup = this.handelPopup.bind(this);
+		this.handelParentTabs = this.handelParentTabs.bind(this);
 		this.state = {
-       	 	visible: 0
+       	 	visible: 0,
+       	 	intab: 0
        	};
     }
 	handelPopup()
@@ -14,41 +23,65 @@ class BorrowInvestor extends React.Component {
           visible: 1,
         });
    	}
+	handelParentTabs()
+    {
+      this.setState({intab:this.state.intab + 1})
+    }
   render() {
   		const {visible} = this.state;
+  		const {intab} = this.state;
         return (
        <div className="column">
-            <div className="box no-padding message-col"> 
-              <article className="message is-info no-margin">
-            <div className="message-header">
-              <div className="full-width">                    
-                <div className="col">
-                    <p className="white no-margin">Be an investor <i className="fa fa-check pull-right"></i></p>
-                  </div>
-              </div>
-                <div className="columns pt-30">
-                  <div className="column">
-                    <h5 className="white">Your investment accounts are full funded and active.</h5>
-                  </div>
-                </div>
-            </div>
-          </article>
-                <div className="tabs vertical-align no-border">                                  
-                    <ul>
-                        <li className=""><Link to={{ pathname: '/borrow', query: { type: 'mystate' } }}>My Statements <i className="fa fa-arrow-right" aria-hidden="true"></i></Link></li>
+       		{
+       			intab==0?
+       			 <div className="box no-padding message-col"> 
+	              	<article className="message is-info no-margin">
+			            <div className="message-header">
+			              <div className="full-width">                    
+			                <div className="col">
+			                    <p className="white no-margin">Be an investor <i className="fa fa-check pull-right"></i></p>
+			                  </div>
+			              </div>
+			                <div className="columns pt-30">
+			                  <div className="column">
+			                    <h5 className="white">Your investment accounts are full funded and active.</h5>
+			                  </div>
+			                </div>
+			            </div>
+			          </article>
+	                <div className="tabs vertical-align no-border">                                  
+	                    <ul>
+	                        <li className=""><Link to={{ pathname: '/investment-account', query: { type: 'mystate' } }}>My Statements <i className="fa fa-arrow-right" aria-hidden="true"></i></Link></li>
 
-                        <li><Link to={{ pathname: '/borrow', query: { type: 'account' } }}>Account History <i className="fa fa-arrow-right" aria-hidden="true"></i></Link></li>
+	                        <li><Link to={{ pathname: '/investment-account', query: { type: 'account' } }}>Account History <i className="fa fa-arrow-right" aria-hidden="true"></i></Link></li>
 
-                        <li><a href="#" onClick={e => this.setState({ visible:1})} >Fund my accounts <i className="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+	                        <li><a href="#" onClick={e => this.setState({ visible:1})} >Fund my accounts <i className="fa fa-arrow-right" aria-hidden="true"></i></a></li>
 
-                        <li><a href="#" onClick={e => this.setState({ visible:2})} >Withdraw funds <i className="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+	                        <li><a href="#" onClick={e => this.setState({ visible:2})} >Withdraw funds <i className="fa fa-arrow-right" aria-hidden="true"></i></a></li>
 
-                    </ul>
-                </div>
-          <div className="col btn-sec pt-10 pb-10">
-            <a className="button is-info is-outlined">More Details</a>
-          </div>
-            </div>
+	                    </ul>
+	                </div>
+			          <div className="col btn-sec pt-10 pb-10">
+			            <a className="button is-info is-outlined" onClick={e => this.setState({ intab:1})}>See my accounts</a>
+			          </div>
+	            </div>:
+       			intab==1?
+       			<InvestSlide1 currentTab={this.handelParentTabs} />:
+       			intab==2?
+       			<InvestSlide2 currentTab={this.handelParentTabs} />:
+       			intab==3?
+       			<InvestSlide3 currentTab={this.handelParentTabs} />:
+       			intab==4?
+       			<InvestSlide4 currentTab={this.handelParentTabs} />:
+       			intab==5?
+       			<InvestSlide5 currentTab={this.handelParentTabs} />:
+       			intab==6?
+       			<InvestSlide6 currentTab={this.handelParentTabs} />:
+       			intab==7?
+       			<InvestSlide7 currentTab={this.handelParentTabs} />:
+       			null
+       		}
+           
             {
             visible==1?
             <div id="modal" className="modal is-active opened">
@@ -87,7 +120,7 @@ class BorrowInvestor extends React.Component {
 				              <p>Deposit funds directly from your bank account to Planswell on a regular monthly schedule.</p>
 				            </div>
 				            <div className="column is-one-third">
-				              <a className="button is-info is-outlined is-small">Set up a PAC</a>
+				              <a className="button is-info is-small">Set up a PAC</a>
 				            </div>
 				          </div>          
 				        </li>
