@@ -309,6 +309,8 @@ class InvestmentAccount extends React.Component {
                           </div>
 
                     </div>
+                    {
+                    tab== "detail"?
                     <div className="box no-padding brand-box">
                         <div className="box tabs vertical-align contact-info pt-10 risk-tab">
                             <h6>My portfolio profile</h6>  
@@ -320,12 +322,10 @@ class InvestmentAccount extends React.Component {
                               <li className="light-blue-set light-blue-color">&nbsp;</li>
                               <li className="grey-set grey-color">&nbsp;</li>
                               <li className="red-set red-color">&nbsp;</li>
-                              
                             </ul>
-                              
                           </div>
-                          
-                      </div>
+                      </div>:null
+                    }
                   </div>
               </div>
           </div>
