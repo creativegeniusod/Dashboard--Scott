@@ -39,7 +39,7 @@ class BorrowProtector extends React.Component {
                         <p className="white no-margin">Protect yourself <i className="fa fa-check pull-right"></i></p>
                       </div>
                   </div>
-                    <div className="bd-klmn-columns pt-30">
+                    <div className="bd-klmn-columns columns pt-30">
                       <div className="column">
                         <small>Total Coverage</small>
                         <h2>$47,148</h2>

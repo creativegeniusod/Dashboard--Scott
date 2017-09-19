@@ -9,7 +9,7 @@ class Investor extends React.Component {
 
         return (
                <div className="column custom-col-3">
-                    <div className="box no-padding detialed-box"> 
+                    <div className="box no-padding message-col detialed-box"> 
                       <div className="swiper-container">
                         <div className="message is-info">
                           <div className="message-header"></div>

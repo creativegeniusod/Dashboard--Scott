@@ -27,16 +27,16 @@ class MortgageInfo extends React.Component {
 						</nav>					
 				    </div>
 				    <h1 className="title">Chris' home mortgage</h1>
-					<div className="columns">
+					<div className="columns custom-flex-wrap">
 						<div className="column custom-flex">
 							<p><small>Total Owing</small></p>
 							<h1>$452,350</h1>
 						</div>
-						<div className="column custom-flex mt-25">
+						<div className="column custom-flex">
 							<p><small>Total Owing</small></p>
 							<h4>$452,350</h4>
 						</div>
-						<div className="column custom-flex mt-25">
+						<div className="column custom-flex">
 							<p><small>Total Owing</small></p>
 							<h4>$452,350</h4>
 						</div>

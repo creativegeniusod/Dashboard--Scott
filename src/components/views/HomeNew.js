@@ -82,8 +82,8 @@ class HomeNew extends React.Component {
           </div>
         </div>
         <div id="modal-3" className="modal is-active modal-dashboard" style={{ display: `${modelDashboard ? 'flex' : 'none'}`}}>
-          <div className="modal-background"></div> 
-          <div className="modal-content ">
+          <div className="modal-background align-center"></div> 
+          <div className="modal-content align-center">
             <div className="btn-wrap">
               <button className="modal-close is-large" aria-label="close" onClick={this.handlePopupClose.bind(this, "dashboard")}></button>
             </div>  

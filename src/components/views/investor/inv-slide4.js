@@ -12,13 +12,17 @@ class InvestSlide4 extends React.Component {
   render() {
 	    
         return (
-			       <div className="box no-padding detialed-box">
+			       <div className="box no-padding message-col detialed-box">
 						<div className="swiper-container">
 							<div className="message is-info">
 								<div className="message-header">
 								</div>
 								<div className="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
-									<a href="#" className="swiper-pagination-bullet"></a><a href="#" className="swiper-pagination-bullet"></a><a href="#" className="swiper-pagination-bullet"></a><a href="#" className="swiper-pagination-bullet"></a><a href="#" className="swiper-pagination-bullet"></a><a href="#" className="swiper-pagination-bullet"></a><a href="#" className="swiper-pagination-bullet"></a>
+									<a href="#" className="swiper-pagination-bullet swiper-pagination-bullet-active"></a>
+									<a href="#" className="swiper-pagination-bullet swiper-pagination-bullet-active"></a>
+									<a href="#" className="swiper-pagination-bullet bold"></a>
+									<a href="#" className="swiper-pagination-bullet"></a>
+									<a href="#" className="swiper-pagination-bullet"></a>	
 								</div>
 							</div>
 							<div className="swiper-wrapper">
@@ -28,7 +32,7 @@ class InvestSlide4 extends React.Component {
 										<p className="info-title">
 											Be an investor
 										</p>
-										<h4>we've recieved your account agreements. Next we'll need your final approval.</h4>
+										<h4>We've recieved your account agreements. Next we'll need your final approval.</h4>
 										<p>At this stage, you'll be approving the final account we intend to open for you.</p>
 									</div>
 									</article>

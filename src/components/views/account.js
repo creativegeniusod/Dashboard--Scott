@@ -42,9 +42,9 @@ class Account extends React.Component {
 			    </div>
 			</div>
 		</section>
-		<section className="section level-3">
+		<section className="section level-2">
 		    <div className="container">
-			    <div className="content">
+			    <div className="content pt-40">
 			    	<div className="columns">
 			    		<div className="column">
 	      					<div className="user-info">
@@ -67,11 +67,11 @@ class Account extends React.Component {
 			    		<div className="column is-one-quarter">
 	      					<div className="box tabs vertical-align">	      						
 	      						<ul>
-	      							<li className="active"><a href="#" rel="tab1" onClick={e => this.setState({ tab: 1 })} >Account settings <i className="fa fa-arrow-right" aria-hidden="true"></i></a></li>
-	      							<li><a href="#" rel="tab2" onClick={e => this.setState({ tab: 2 })}>Update your plan <i className="fa fa-arrow-right" aria-hidden="true"></i></a></li>
-	      							<li><a href="#" rel="tab3" onClick={e => this.setState({ tab: 3})} >Notification centre <i className="fa fa-arrow-right" aria-hidden="true"></i></a></li>
-	      							<li><a href="#" rel="tab4" onClick={e => this.setState({ tab: 4 })}>Referral program <i className="fa fa-arrow-right" aria-hidden="true"></i></a></li>
-	      							<li><a href="#" rel="tab5" onClick={e => this.setState({ tab: 5 })}>Log out <i className="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+	      							<li className={ tab==1? "active":"" }><a href="#" rel="tab1" onClick={e => this.setState({ tab: 1 })} >Account settings <i className="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+	      							<li className={ tab==2? "active":"" }><a href="#" rel="tab2" onClick={e => this.setState({ tab: 2 })}>Update your plan <i className="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+	      							<li className={ tab==3? "active":"" }><a href="#" rel="tab3" onClick={e => this.setState({ tab: 3})} >Notification centre <i className="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+	      							<li className={ tab==4? "active":"" }><a href="#" rel="tab4" onClick={e => this.setState({ tab: 4 })}>Referral program <i className="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+	      							<li className={ tab==5? "active":"" }><a href="#" rel="tab5" onClick={e => this.setState({ tab: 5 })}>Log out <i className="fa fa-arrow-right" aria-hidden="true"></i></a></li>
 	      						</ul>
 	      					</div>
 	      					<div className="box contact-info mt-20 ">

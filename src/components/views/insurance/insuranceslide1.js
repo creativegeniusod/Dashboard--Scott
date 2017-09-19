@@ -1,11 +1,28 @@
 import React from 'react';
 import { Link } from 'react-router'
-
-class InsuranceSlide1 extends React.Component { 
-    componentDidMount() {    
-      }          
-            
+import AlreadyInsurance from '../already-insurance.js'
+import SubmitPopup from '../submit-already-popup.js'
+  
+class InsuranceSlide1 extends React.Component {    
+  constructor(props) {
+    super(props);
+    this.handelClosePopup = this.handelClosePopup.bind(this);
+    this.handelSubmit = this.handelSubmit.bind(this);
+    this.state = {
+          display: 0
+        };
+    }
+  handelClosePopup()
+  {
+    this.setState({display: 0});
+  }
+  handelSubmit()
+  {
+    this.setState({display: this.state.display + 1});
+  }
+      
   render() {
+    const {display} = this.state;
         return (
                  <div className="swiper-container">
                   <div className="message is-danger">
@@ -26,10 +43,17 @@ class InsuranceSlide1 extends React.Component {
                       </div>
                       </article>
                       <div className="col btn-sec pt-0">
-                        <a className="button is-danger is-outlined" onClick={this.props.currentTab}><span>Get Started</span></a><span className="pull-right already-mortgage">i already have a insurance</span>
+                        <a className="button is-danger is-outlined" onClick={this.props.currentTab}><span>Get Started</span></a><a className="pull-right already-mortgage" onClick={e => this.setState({ display:1})}>i already have a insurance</a>
                       </div>
                     </div>
                   </div>
+                  {
+                      display==1?
+                      <AlreadyInsurance closeTab= {this.handelClosePopup} submit={this.handelSubmit} />:
+                      display==2?
+                      <SubmitPopup closeTab= {this.handelClosePopup} title="insurance" spantext="coverage" />:
+                      null
+                  }
                 </div>
         );
     }

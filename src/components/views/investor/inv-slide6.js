@@ -12,13 +12,17 @@ class InvestSlide6 extends React.Component {
   render() {
 	    
         return (
-			       <div className="box no-padding detialed-box">
+			       <div className="box no-padding message-col detialed-box">
 						<div className="swiper-container">
 							<div className="message is-info">
 								<div className="message-header">
 								</div>
 								<div className="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
-									<a href="#" className="swiper-pagination-bullet"></a><a href="#" className="swiper-pagination-bullet"></a><a href="#" className="swiper-pagination-bullet"></a><a href="#" className="swiper-pagination-bullet"></a><a href="#" className="swiper-pagination-bullet"></a><a href="#" className="swiper-pagination-bullet"></a><a href="#" className="swiper-pagination-bullet"></a>
+									<a href="#" className="swiper-pagination-bullet swiper-pagination-bullet-active"></a>
+									<a href="#" className="swiper-pagination-bullet swiper-pagination-bullet-active"></a>
+									<a href="#" className="swiper-pagination-bullet swiper-pagination-bullet-active"></a>
+									<a href="#" className="swiper-pagination-bullet swiper-pagination-bullet-active"></a>
+									<a href="#" className="swiper-pagination-bullet bold"></a>
 								</div>
 							</div>
 							<div className="swiper-wrapper">

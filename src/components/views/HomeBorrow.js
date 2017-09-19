@@ -39,7 +39,7 @@ class HomeBorrow extends React.Component {
                   <BorrowInvestor />
                   <BorrowProtector />
                   <div className="column custom-col-3">
-                          <div className="box no-padding detialed-box">
+                          <div className="box no-padding message-col detialed-box">
                               {
                               	tab==1?
                               	<Bslide currentState={this.handelParentTabs} />:
