@@ -10,6 +10,8 @@ import Mortgage from './components/views/borrow/mortgage.js';
 import MortgageInfo from './components/views/borrow/mortgage-info.js';
 import MortgageDocuments from './components/views/borrow/mortgage-documents.js';
 import InvestmentAccount from './components/views/investor/investment-account.js';
+import Dashboard from './components/views/Dashboard.js';
+import ReferFriend from './components/views/dashboard/refer-friend.js';
 
 
 
@@ -23,6 +25,9 @@ export default (
      <Route path='mortgage-info' component={MortgageInfo}/>
      <Route path='mortgage-documents' component={MortgageDocuments}/>
      <Route path='investment-account' component={InvestmentAccount}/>
+     <Route path='refer-friend' component={ReferFriend} />
+     <Route path='dashboard' component={Dashboard}/>
     <Route path='*' component={Home} />
+   
   </Route>
 );

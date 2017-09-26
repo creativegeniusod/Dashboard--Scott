@@ -13,6 +13,7 @@ class Header extends React.Component {
             sidebar: 'fa-chevron-right',
             sidebarActive: false,
             opacity: false,
+            emailSubmit: false,
         };
     }
     handleShow(e) {
@@ -22,6 +23,7 @@ class Header extends React.Component {
           sidebar: 'fa-chevron-left',
           sidebarActive: true,
           opacity: false,
+          emailSubmit: false
         });
 		document.body.classList.add('add-overlay');
 		document.getElementById("navDiv").className ='right-nav';
@@ -47,7 +49,7 @@ class Header extends React.Component {
 	
  
   render() {
-	   const {display, hide, sidebar, sidebarActive, opacity} = this.state;
+	   const {display, hide, sidebar, sidebarActive, opacity,emailSubmit} = this.state;
         return (
         <div>
         
@@ -56,32 +58,42 @@ class Header extends React.Component {
 		<div className="navbar-header">
 	        <button className="navbar-toggle hide-sidebar" type="button" onClick={this.handleHide}>X</button>
 	    </div>
-	    <h6>My Planswell acount</h6>
 			<ul>
 				<li>
-					<Link to='/account'>Account settings</Link>
-					<i className="fa fa-arrow-right"></i>
+					<h6>My Planswell account</h6>
 				</li>
 				<li>
-					<Link to='#'>Refer a friend</Link>
-					<i className="fa fa-arrow-right"></i>
-				</li>
-				<li>
-					<Link to='#'>Update your plan</Link>
+					<Link to='/refer-friend' onClick={this.handleHide}>Refer a friend</Link>
 					<i className="fa fa-arrow-right"></i>
 				</li>
 				<li>
 					<Link to='#'>Logout</Link>
 					<i className="fa fa-arrow-right"></i>
 				</li>
-				<li className="no-border">
-					<Link to='#'>Contact Planswell</Link>
-					<p><small>Have a question about your account?Let us know below and well get back to you as soon as possible.</small></p>
-				</li>
-				<li className="no-border pt-0">
-					<textarea placeholder="What's on your mind?"></textarea>
-					<button className="button is-primary">Email Us</button>
-				</li>
+				
+				{
+					emailSubmit == false?
+					<li className="no-border pt-15">
+						<Link to='#'>Contact Planswell</Link>
+						<p><small>Have a question about your account?Let us know below and well get back to you as soon as possible.</small></p>
+						<textarea placeholder="What's on your mind?"></textarea>
+						<button className="button is-primary" onClick={e=>this.setState({emailSubmit:"content"})}>Email Us</button>
+					</li>:
+					emailSubmit == "content"?
+					<li className="no-border pt-15">
+						<Link to='#'>Contact Planswell</Link>
+						<p><small>Have a question about your account?Let us know below and well get back to you as soon as possible.</small></p>
+						<textarea value="What's the deal with all the insurance, huh!? Tell me about that!"></textarea>
+						<button className="button is-primary" onClick={e=>this.setState({emailSubmit:true})}>Email Us</button>
+					</li>:
+					emailSubmit == true?
+					<li className="no-border pt-15">
+						<h6 className="white">Thanks for reaching out, Chris.</h6>
+						<p><small>one of our Plan Pros will reach out to you as soon as possible via email.</small></p>
+					</li>:
+					null
+				}
+				
 				<li className="no-border pt-0 call-us">Burning question that cans wait? Give us a call: <span>1-800-PLANSWELL</span></li>
 			</ul>
 	    </div>
