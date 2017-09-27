@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router'
-class AccountTransfer extends React.Component {
+class BeingTransfer extends React.Component {
   render() {
         return (
       			<div id="modal-3" className="modal is-active modal-dashboard opened" >
@@ -10,11 +10,11 @@ class AccountTransfer extends React.Component {
 			              <button className="modal-close is-large" aria-label="close" onClick={this.props.event.bind("slide",0)}></button>
 			            </div>  
 			            <div className="box bg-img">
-			              <h2 className="align-center">High five! Your PAC is on the way</h2>
-			              <p className="align-center">We'll let you know as soon as your monthly pre-authorized contribution take effect. For now, sit tight and we'll do the rest.</p>
+			              <h2 className="align-center">Awesome! Your account is being transferred.</h2>
+			              <p className="align-center">You've confirmed that you follwed the steps to transfer an investment account to Planswell. Your account should be transferred <strong>within 2-3 weeks.</strong> If anything comes up, we'll let you know by email.</p>
 			                <a href="#" className="button modal-button is-info" data-target="#modal-3" onClick={this.props.event.bind("slide","fund")}>Fund another account</a>
 			                <br/>
-			                <a onClick={this.props.event.bind("slide","backtoinvest")}>Back to investments</a>
+			                <a onClick={this.props.event.bind("slide","backToInvestAfterTransfer")}>Back to investments</a>
 			              </div>    
 			            </div>
 			          </div>
@@ -23,4 +23,4 @@ class AccountTransfer extends React.Component {
   
 }
 
-export default AccountTransfer;
+export default BeingTransfer;

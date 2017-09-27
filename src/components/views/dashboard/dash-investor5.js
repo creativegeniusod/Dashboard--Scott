@@ -1,9 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router'
 import InvestTitle from './invest-title.js'
-import FundAccount from './fund-account.js'
-import FundTransfer from './fund-transfer.js'
-import AccountTransfer from './account-transfer.js'
 class DashboardInvestor5 extends React.Component {
 
   	render() {

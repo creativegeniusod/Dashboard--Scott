@@ -39,7 +39,7 @@ class FundAccount extends React.Component {
 			                  <p>Deposit funds directly from your bank account to Planswell on a regular monthly schedule.</p>
 			                </div>
 			                <div className="column is-one-third">
-			                  <a className="button is-info is-small" onClick={this.props.event}>Set up a PAC</a>
+			                  <a className="button is-info is-small" onClick={this.props.event.bind("slide",1)}>Set up a PAC</a>
 			                </div>
 			              </div>          
 			            </li>
@@ -50,7 +50,7 @@ class FundAccount extends React.Component {
 			                  <p>If you have a TFSA, an RRSP or even a savings account you'd like to invest with Planswell, you can trasfer them directly. We'll even pay the fees.</p>
 			                </div>
 			                <div className="column is-one-third">
-			                  <a className="button is-info is-outlined is-small" onClick={this.props.eventnext}>Transfer accounts</a>
+			                  <a className="button is-info is-outlined is-small" onClick={this.props.event.bind("slide","transfer")}>Transfer accounts</a>
 			                </div>
 			              </div>          
 			            </li>

@@ -1,47 +1,49 @@
 import React from 'react';
 import { Link } from 'react-router'
-
+import DashboardBorrow from './dash-borrow'
+import DashboardBorrow1 from './dash-borrow1'
+import DashboardBorrow2 from './dash-borrow2'
+import DashboardBorrow3 from './dash-borrow3'
+import DashboardBorrow4 from './dash-borrow4'
+import DashboardBorrow5 from './dash-borrow5'
+import DashboardBorrow6 from './dash-borrow6'
 class Borrow extends React.Component {
    constructor(){
     super();
+    this.handelBorrowTabs = this.handelBorrowTabs.bind(this);
+    this.handelBorrowPopup = this.handelBorrowPopup.bind(this);
     this.state= { visible: 0,tab:1 };
+  }
+  handelBorrowTabs(type)
+  {
+      this.setState({tab: this.state.tab + 1});
+  } 
+  handelBorrowPopup(type)
+  {
+      this.setState({visible: type});
   }
   render() {
         const {visible,tab} = this.state;
         return (
             <div className="column">
-              <div className="box no-padding message-col dashboard detialed-box"> 
-                  <article className="message no-margin">
-                      <div className="message-header no-padding">
-                        <div className="full-width">                    
-                            <div className="col is-warning col-heading"><p className="no-margin">Borrow Wisely</p></div>
-                            {
-                              tab == 1?
-                              <div className="col">
-                                <p className="no-margin heading">Save <strong>$400/month</strong> by replacing your current dept with a new mortgage.</p>
-                                <h4 className="no-margin">Next step:</h4>
-                                <p className="no-margin">Answer a few questions to let us know about your mortgage needs.</p>
-                              </div>:
-                              tab == 2?
-                               <div className="col">
-                                  <h4 className="no-margin">You've requested a call from a specialist to discuss your current mortgage.</h4>
-                                  <p className="no-margin"><i className="fa fa-mobile"></i> You should hear from one of our insurance specialist within 1-2 days.</p>
-                                </div>:
-                              null
-                            }
-                           
-                        </div>
-                      </div>
-                  </article>
-                     {
-                      tab == 1?   
-                      <div className="col btn-sec pt-10 pb-10">
-                        <a className="button is-warning is-outlined" >Answer question</a>
-                        <a className="align-right"  onClick={e => this.setState({ visible:"already"})}>i already have mortgage</a>
-                      </div>:
-                      null
-                    }
-              </div>
+              {
+                tab == "backTo"?
+                  <DashboardBorrow  borrowtab={this.handelBorrowTabs} />:
+                tab == 1?
+                  <DashboardBorrow1  borrowtab={this.handelBorrowTabs} borrowpopup={this.handelBorrowPopup} />:
+                tab == 2?
+                  <DashboardBorrow2  borrowtab={this.handelBorrowTabs} />:
+                tab == 3?
+                  <DashboardBorrow3  borrowtab={this.handelBorrowTabs} />:
+                tab == 4?
+                  <DashboardBorrow4  borrowtab={this.handelBorrowTabs} />:
+                tab == 5?
+                  <DashboardBorrow5  borrowtab={this.handelBorrowTabs} />:
+                tab == 6?
+                  <DashboardBorrow6  borrowtab={this.handelBorrowTabs} />:
+                  null
+              }
+             
               {
               visible=="already"?
                 <div id="modal" className="modal is-active opened">
@@ -72,7 +74,7 @@ class Borrow extends React.Component {
                       <div className="box bg-img">
                         <h2 className="align-center">Great! You've request a call</h2>
                         <p className="align-center">One of our specialist will reach out to you over the phone to discuss your current mortgage details. You can expect a call in 1-2 days.</p>
-                          <a href="#" className="button modal-button" data-target="#modal-3" onClick={e => this.setState({tab:2, visible:0})}>Back to dashboard</a>
+                          <a href="#" className="button modal-button" data-target="#modal-3" onClick={e => this.setState({tab:"backTo", visible:0})}>Back to dashboard</a>
                         </div>    
                       </div>
                     </div>:

@@ -33,8 +33,8 @@ class FundTransfer extends React.Component {
 			              5. Choose the monthly option under "Frequency" for your payment.     
 			            </li>
 			             <li>
-			             	<a className="button modal-button is-info is-small">I've followed the steps</a>
-			        		<a href="#" className="button inverse-btn">Nevermind</a>     
+			             	<a className="button modal-button is-info is-small" onClick={this.props.event.bind("slide","follow-transfer")}>I've followed the steps</a>
+			        		<a href="#" className="button inverse-btn" onClick={this.props.event.bind("slide","fund")}>Nevermind</a>     
 			            </li>
 			          </ul>     
 			          </div>

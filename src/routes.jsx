@@ -12,6 +12,10 @@ import MortgageDocuments from './components/views/borrow/mortgage-documents.js';
 import InvestmentAccount from './components/views/investor/investment-account.js';
 import Dashboard from './components/views/Dashboard.js';
 import ReferFriend from './components/views/dashboard/refer-friend.js';
+import PolicyView from './components/views/dashboard/policy-view.js';
+import PolicyDetail from './components/views/dashboard/policy-detail.js';
+import PolicyDocuments from './components/views/dashboard/policy-document.js';
+import PolicyClaim from './components/views/dashboard/policy-claim.js';
 
 
 
@@ -27,6 +31,10 @@ export default (
      <Route path='investment-account' component={InvestmentAccount}/>
      <Route path='refer-friend' component={ReferFriend} />
      <Route path='dashboard' component={Dashboard}/>
+     <Route path='policy-view' component={PolicyView}/>
+     <Route path='policy-detail' component={PolicyDetail}/>
+     <Route path='policy-document' component={PolicyDocuments}/>
+     <Route path='policy-claim' component={PolicyClaim}/>
     <Route path='*' component={Home} />
    
   </Route>

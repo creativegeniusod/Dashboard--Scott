@@ -83,7 +83,7 @@ button.hide-sidebar { background: transparent none repeat scroll 0 0; color: #ff
 .swiper-pagination { float: right; margin-right: 15px;}
 .is-info .swiper-pagination-bullet.swiper-pagination-bullet-active { box-shadow: 0 0 0 1px #166bd3 inset; background: #3273DC !important;  opacity: 1 !important; }
 .is-danger .swiper-pagination-bullet { background: #e56430 !important; }
-.is-danger .swiper-pagination-bullet.swiper-pagination-bullet-active { background: transparent !important; box-shadow: 0 0 0 1px #e56430 inset; opacity: 1 !important; }
+.is-danger .swiper-pagination-bullet.swiper-pagination-bullet-active { box-shadow: 0 0 0 1px #e56430 inset; opacity: 1 !important; }
 .is-warning .swiper-pagination-bullet { background: #fff none repeat scroll 0 0; border: 1px solid #c38822;}
 .is-info .swiper-pagination-bullet { background: #fff none repeat scroll 0 0; border: 1px solid #3273DC;}
 .is-warning .swiper-pagination-bullet.swiper-pagination-bullet-active { background: #db9d30 none repeat scroll 0 0; opacity: 1;}
@@ -156,7 +156,9 @@ button.hide-sidebar { background: transparent none repeat scroll 0 0; color: #ff
 .tabs.vertical-align, .tabs.vertical-align ul { display: block; margin: 0px; padding: 0px; border: none; }
 .tabs.vertical-align { border-top: 4px solid #10a356; }
 .tabs.vertical-align ul li { text-align: left; font-size: 16px; }
-.tabs.vertical-align ul li a { display: block; padding:10px 20px; position: relative; }.tabs.vertical-align ul li a.active{color:#3273dc;}.tabs.vertical-align ul li a.active > .fa{display:none;}.box .tabs.vertical-align ul li a{padding: 15px 20px;}
+.tabs.vertical-align ul li a { display: block; padding:10px 20px; position: relative; }
+.tabs.vertical-align ul li a.active{color:#3273dc;}
+.tabs.vertical-align ul li a.active > .fa{display:none;}.box .tabs.vertical-align ul li a{padding: 15px 20px;}
 .tabs.vertical-align .fa { font-size: 12px; font-weight: normal; position: absolute; right: 15px; top: 14px; }
 .tabs.vertical-align ul li.is-active .fa { display: none; }
 .tabs.vertical-align ul ul{border-bottom: 1px solid #d0d6d8;padding:20px 0; }.tabs.vertical-align ul ul li{padding:5px 20px; font-size:15px;}
@@ -257,8 +259,9 @@ label.error { color: #D66639; float: left; width: 100%;}
 .fa.fa-clock-o { font-size: 22px; margin-right: 6px;}
 .fa-clock-o.step7{ color: #db9d30;}
 .fa.fa-check.green-btn.pull-right.complete { font-size: 12px; margin: 12px 10px;}
-.swiper-pagination-bullet.bold {   opacity: 1;}
+.swiper-pagination-bullet.bold {   opacity: 1; background: #fff none repeat scroll 0 0;}
 .is-warning .swiper-pagination-bullet.bold { border-color: #c38822;box-shadow: 0 0 0 1px #ffbd47 inset;}
+.is-danger .swiper-pagination-bullet.bold { background-color: #fff !important; border-color: #e56430; box-shadow: 0 0 0 1px #ffbd47 inset; opacity: 1;}
 .is-info .swiper-pagination-bullet.bold { border-color: #3273DC;box-shadow: 0 0 0 1px #3273DC inset;}
 .banner-bg1{background:url("/static/images/banner-img2.png") no-repeat scroll center top; padding: 10px 0 !important;}
 .banner-bg2{background:url("/static/images/banner-img3.png") no-repeat scroll center top; padding: 10px 0 !important;}
@@ -390,8 +393,9 @@ p.no-margin.heading { color: #3C4142; letter-spacing: normal; text-transform: no
 .dashboard article h4.no-margin{padding:20px 20px 0;}
 .dashboard .swiper-pagination { margin-top: 13px;}
 .dashboard .heading {border-bottom:1px solid #EEE;}
-.fa-mobile.is-info { color: #166cd3;}
-.fa-mobile.is-danger {  color: #e56634;}
+.fa.is-info { color: #166cd3;}
+.fa.is-danger {  color: #e56634;}
+.fa.is-warning {  color: #db9d30;}
 .columns .column #tab1 h1{font-size:20px; color:#666;}
 .columns .column #tab1 p{ color:#666;}
 .columns .column #tab1 a.is-underlined{ color:#10a356; text-decoration: underline; font-size:12px; line-height: 20px;}
@@ -401,8 +405,12 @@ p.no-margin.heading { color: #3C4142; letter-spacing: normal; text-transform: no
 .top-border{border-top:1px solid #eee;}
 .column.right-side { flex: 1 1 auto; margin-right: 12px;  text-align: right; width: 50%;}
 .column.right-side > span {  color: #6c7375;  font-size: 14px;  font-style: italic;}
-
-
+.dashboard .col p.completed-message { margin: 0; padding: 0; color:#16A55A ; font-size: 12px;}
+.completed-message.column { display: inline-table;color: #16a55a;}
+.column.policy-text { display: inline-table; float: left; font-size: 15px; margin-right: 7%; width: 79%;}
+.box.critical-policy > h6 { border-bottom: 1px solid #dcdcdc; font-size: 12px; margin-bottom: 12px; padding: 2px 5px 13px; color:#899092; }
+.box.critical-policy span { float: right;}
+.tabs.vertical-align.is-danger ul li a.active{color:#E5622E;}
 
 
 
