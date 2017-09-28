@@ -42,12 +42,12 @@ class PolicyClaim extends React.Component {
                           <ul className="p-20">
                             <li><p>Making an insurance claim is surprisingly easy. Just follow the steps below and you'll be on your way to leveraging your insurance to take care of yourself.</p></li>
                             <li><p>How to make a...</p>
-                            <p className="select"><select><option>Critical illness claim </option></select></p></li>
-                            <li><h4>1. Gather the necessary documents </h4>
+                            <p className="select default-font-size green-border"><select><option>Critical illness claim </option></select></p></li>
+                            <li><p><strong>1. Gather the necessary documents </strong></p>
                               <p>The first key to a successful critical illness claim is making sure you have the correct documents. Youll need a copy of your doctor's prognosis in triplicate. </p></li>
-                             <li><h4>2. Report your incidence to Assumption Life </h4>
+                             <li><p><strong>2. Report your incidence to Assumption Life </strong></p>
                               <p>Second you'll need to file the claim with Assumption Life. In order to do this, you'll need to upload your doctor's prognosis copy you gathered in step one to Assumption's client portal which you can log into here.</p></li>
-                             <li><h4>3. Assumption will provide you a response within 2 weeks </h4>
+                             <li><p><strong>3. Assumption will provide you a response within 2 weeks </strong></p>
                               <p>Assumption Life will review your claim and provide you a response as soon as possible. If they require any other documentation, or they have any critical information regarding your claim they'll let you know via phone call or email. Otherwise, they'll provide you a decision and provide you with documentation surrounding your claim coverage. </p></li> 
                           </ul>
                       </div>
@@ -61,13 +61,13 @@ class PolicyClaim extends React.Component {
                         <PolicySidebar tabhandle={this.handelParentPolicyTab} currenttabstat={"claim"} />
                     </div>
                     <div className="box no-padding brand-box">
-                      <div className="box vertical-align contact-info pt-10 risk-tab">
+                      <div className="box vertical-align contact-info pt-10">
                         <h6>My insurance provider</h6>
-                        <div className="columns">
-                          <div className="column policy-provider-logo"><img src="static/images/provider.png" /></div>
+                        <div className="columns no-margin">
+                          <div className="column policy-provider-logo is-one-quarter"><img className="mr-15 ml-15" src="static/images/provider.png" /></div>
                           <div className="column">
-                            <p>Assumption Life</p>
-                            <a>Visit their website</a>
+                            <p className="pl-10">Assumption Life</p>
+                            <a className="default-color no-margin is-underlined pl-10">Visit their website</a>
                           </div>
                         </div>
                       </div>

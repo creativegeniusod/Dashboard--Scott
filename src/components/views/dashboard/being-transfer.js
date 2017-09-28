@@ -14,7 +14,7 @@ class BeingTransfer extends React.Component {
 			              <p className="align-center">You've confirmed that you follwed the steps to transfer an investment account to Planswell. Your account should be transferred <strong>within 2-3 weeks.</strong> If anything comes up, we'll let you know by email.</p>
 			                <a href="#" className="button modal-button is-info" data-target="#modal-3" onClick={this.props.event.bind("slide","fund")}>Fund another account</a>
 			                <br/>
-			                <a onClick={this.props.event.bind("slide","backToInvestAfterTransfer")}>Back to investments</a>
+			                <a onClick={this.props.event.bind("slide","backToInvestAfterTransfer")} className="default-color">Back to investments</a>
 			              </div>    
 			            </div>
 			          </div>

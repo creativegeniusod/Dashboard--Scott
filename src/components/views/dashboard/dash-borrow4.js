@@ -20,7 +20,7 @@ class DashboardBorrow4 extends React.Component {
 			                    	<a href="#" className="swiper-pagination-bullet"></a>
 			                    	<a href="#" className="swiper-pagination-bullet"></a>
 			                    </div>
-			                    <p className="no-margin is-warning">Home mortgage</p>
+			                    <p className="no-margin is-warning critical-text">Home mortgage <i class="fa fa-question question-mark"></i></p>
 			                    <h4 className="no-margin">Your mortgage application is ready to be completed, and we'll need a few documents from you as well</h4>
 			                    <p className="no-margin" >Filling out your application should only take 10-15 minutes, and we'll need [this document] [that document], and [this document]. Be sure to get them ready before starting your application.</p>
 			                  </div>

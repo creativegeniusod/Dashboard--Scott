@@ -99,7 +99,7 @@ class DashboardInvestor4 extends React.Component {
 					      <div className="p-30">
 					        <h2 className="no-margin">Funding > Setting up a PAC</h2>
 					       	<p>Pre-authorized contribution is the best way to consistently build wealth and hit your retirement goal. Simply fill and sign a PAC from and we'll do the rest.</p>
-					       	<p><span>Your recommendation:</span> $418/month to your TFSA</p>
+					       	<div className="shadow-box"><p><span className="green-text">Your recommendation:</span><strong> $418/month </strong>to your TFSA</p></div>
 					      		<div className="col pt-20"><a className="button modal-button is-info is-small" onClick={e => this.setState({ visible:"follow"})} data-target="#modal">Fill out PAC form</a><a href="#" className="button inverse-btn"onClick={e => this.setState({ visible:0})} >Nevermind</a></div>
 					      </div>  
 

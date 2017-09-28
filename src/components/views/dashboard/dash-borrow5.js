@@ -4,8 +4,6 @@ import BorrowTitle from './borrow-title.js';
 class DashboardBorrow5 extends React.Component {
   render() {
         return (
-       <div className="column">
-       		{
        			 <div className="box no-padding message-col dashboard detialed-box"> 
 	              	<article className="message no-margin">
 			            <div className="message-header no-padding">
@@ -21,21 +19,20 @@ class DashboardBorrow5 extends React.Component {
 			                    	<a href="#" className="swiper-pagination-bullet"></a>
 			                    	<a href="#" className="swiper-pagination-bullet"></a>
 			                    </div>
-			                    <p className="no-margin is-warning">Home mortgage</p>
-			                    <h4 className="no-margin">Your mortgage application is ready to be completed, and we'll need a few documents from you as well</h4>
-			                    <p className="no-margin" >Filling out your application should only take 10-15 minutes, and we'll need [this document] [that document], and [this document]. Be sure to get them ready before starting your application.</p>
+			                    <p className="no-margin is-warning critical-text">Home mortgage <i class="fa fa-question question-mark"></i></p>
+			                    <h4 className="no-margin">You've filled out your application. Now it's time to upload the following documents.</h4>
+			                    <p className="no-margin" >Your 2017 T4</p>
+			                    <p className="no-margin" >The important doc name</p>
+			                    <p className="no-margin" >Doc name here</p>
 			                  </div>
 			              </div>
 			            </div>
 			        </article>
 			        <div className="col btn-sec pt-10 pb-10">
-                    	<a className="button is-warning" >Upload document</a>
+                    	<a className="button is-warning"  onClick= {this.props.borrowtab} >Upload document</a>
                     	<span className="app-done">Application filled <i className="fa fa-check green-btn step7"></i></span>
                  	</div>
 	            </div>
-       		}
-           
-        </div>
 
         );
     }

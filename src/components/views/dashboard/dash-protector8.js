@@ -22,9 +22,9 @@ class DashboardProtector8 extends React.Component {
 				                    	<a href="#" className="swiper-pagination-bullet"></a>
 				                    	<a href="#" className="swiper-pagination-bullet"></a>
 				                    </div>
-				                    <p className="no-margin is-danger">Critical illness:</p>
+				                    <p className="no-margin is-danger critical-text">Critical illness <i className="fa fa-question question-mark"></i></p>
 				                     
-				                    <h4 className="no-margin">Good news! Your critical illness policy has been approved!</h4>
+				                    <h4 className="no-margin pt-0 pb-10">Good news! Your critical illness policy has been approved!</h4>
 				                    <p className="no-margin">Review and sign your policy to let us know you're happy with the plan detail</p>
 				                  </div>
 				              </div>
@@ -39,9 +39,9 @@ class DashboardProtector8 extends React.Component {
 				            <div className="message-header no-padding">
 				              <div className="full-width"> 
 				                  <div className="col">
-				                    <p className="no-margin is-danger">Disability:</p>
+				                    <p className="no-margin is-danger critical-text">Disability <i className="fa fa-question question-mark"></i></p>
 				                     
-				                    <h4 className="no-margin">Your disability insurance your policy is ready to review and sign.</h4>
+				                    <h4 className="no-margin pt-0 pb-10">Your disability insurance your policy is ready to review and sign.</h4>
 				                  </div>
 				              </div>
 				            </div>

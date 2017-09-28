@@ -83,8 +83,8 @@ class Mortgage extends React.Component {
 			        		<div className="message is-warning mb-0">
                           		<div className="message-header"></div>
                           	</div>
-                          	<h5><Link to="/mortgage-documents">My mortgage documents</Link></h5>
-                          	<h5><a href="#" onClick={e => this.setState({ visible:1})}>Inquire about reﬁnancing</a></h5>
+                          	<h5><Link to="/mortgage-documents">My mortgage documents <i className="fa fa-arrow-right float-right"></i></Link></h5>
+                          	<h5><a href="#" onClick={e => this.setState({ visible:1})}>Inquire about reﬁnancing <i className="fa fa-arrow-right float-right"></i></a></h5>
                           
                           	
 			        	</div>

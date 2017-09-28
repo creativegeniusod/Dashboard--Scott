@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router'
 import BorrowTitle from './borrow-title.js';
 
-class DashboardBorrow6 extends React.Component {
+class DashboardBorrow7 extends React.Component {
   render() {
         return (
        			   <div id="modal" className="modal is-active opened">
@@ -19,7 +19,7 @@ class DashboardBorrow6 extends React.Component {
                             </div>  
                               <div className="up-doc-row columns no-margin">
                                   <div className="column  black-color">Your last T4 statement</div>
-                               <a className="column text-right warning-color" onClick= {this.props.borrowtab}>Choose document</a>
+                               <label className="column text-right warning-color">cbaldesarra-t4.pdf <a>change</a></label>
                               </div>
                             <div className="up-doc-row columns no-margin">
                                 <div className="column black-color">Personal credit statement</div>
@@ -30,8 +30,8 @@ class DashboardBorrow6 extends React.Component {
                                   <a className="column text-right warning-color" >Choose document</a>
                             </div>
                             <div className="col p-20">
-                                    <a className="button is-warning" data-target="#modal">Upload documents</a> 
-                              <a href="#" className="button inverse-btn" onClick= {this.props.borrowprevtab}>Nevermind</a>
+                                    <a className="button is-warning" onClick= {this.props.borrowtab} data-target="#modal">Upload documents</a> 
+                              <a href="#" className="button inverse-btn">Nevermind</a>
                             </div>
                           </div>
                       </div>
@@ -42,4 +42,4 @@ class DashboardBorrow6 extends React.Component {
   
 }
 
-export default DashboardBorrow6;
+export default DashboardBorrow7;

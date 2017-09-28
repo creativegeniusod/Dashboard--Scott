@@ -87,10 +87,16 @@ class MortgageInfo extends React.Component {
 				        	</div>
 				      	</div>
 				      	<div className="column is-one-third">
-				        	<div className="box no-padding brand-box">
+				      		<div className="box no-padding brand-box document-type">
 				        		<div className="message is-warning mb-0">
 	                          		<div className="message-header"></div>
 	                          	</div>
+	                          	<h5><Link to="/mortgage-documents">My mortgage documents<i className="fa fa-arrow-right float-right"></i></Link></h5>
+	                          	<h5><a href="#" onClick={e => this.setState({ visible:1})}>Inquire about reﬁnancing<i className="fa fa-arrow-right float-right"></i></a></h5>
+	                          
+	                          	
+				        	</div>
+				        	<div className="box no-padding brand-box">
 	                          	<h5>My mortgage lender</h5>
 	                          	<div className="product-row columns">
 	                          		<div className="product-thumb column is-one-quarter">

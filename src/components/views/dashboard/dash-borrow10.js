@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from 'react-router'
 import BorrowTitle from './borrow-title.js';
 
-class DashboardBorrow6 extends React.Component {
+class DashboardBorrow7 extends React.Component {
   render() {
         return (
-       			   <div id="modal" className="modal is-active opened">
+               <div id="modal" className="modal is-active opened">
                     <div className="modal-background"></div> 
                         <div className="modal-content">
                           <div className="btn-wrap">
@@ -18,20 +18,20 @@ class DashboardBorrow6 extends React.Component {
                               <p><b>Please upload the following:</b></p>
                             </div>  
                               <div className="up-doc-row columns no-margin">
-                                  <div className="column  black-color">Your last T4 statement</div>
-                               <a className="column text-right warning-color" onClick= {this.props.borrowtab}>Choose document</a>
+                                  <div className="column  black-color"><strike>Your last T4 statement</strike></div>
+                               <label className="column text-right green-text">Uploaded! <i className="fa fa-check green-btn step7"></i></label>
                               </div>
                             <div className="up-doc-row columns no-margin">
                                 <div className="column black-color">Personal credit statement</div>
-                                  <a className="column text-right warning-color">Choose document</a>
+                                  <a className="column text-right warning-color" onClick= {this.props.borrowtab} >Choose document</a>
                             </div>
                             <div className="up-doc-row columns no-margin">
                                 <div className="column black-color">Another document</div>
-                                  <a className="column text-right warning-color" >Choose document</a>
+                                  <a className="column text-right warning-color" onClick= {this.props.borrowtab} >Choose document</a>
                             </div>
                             <div className="col p-20">
                                     <a className="button is-warning" data-target="#modal">Upload documents</a> 
-                              <a href="#" className="button inverse-btn" onClick= {this.props.borrowprevtab}>Nevermind</a>
+                              <a href="#" className="button inverse-btn">Nevermind</a>
                             </div>
                           </div>
                       </div>
@@ -42,4 +42,4 @@ class DashboardBorrow6 extends React.Component {
   
 }
 
-export default DashboardBorrow6;
+export default DashboardBorrow7;

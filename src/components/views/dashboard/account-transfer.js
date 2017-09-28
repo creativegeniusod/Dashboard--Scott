@@ -14,7 +14,7 @@ class AccountTransfer extends React.Component {
 			              <p className="align-center">We'll let you know as soon as your monthly pre-authorized contribution take effect. For now, sit tight and we'll do the rest.</p>
 			                <a href="#" className="button modal-button is-info" data-target="#modal-3" onClick={this.props.event.bind("slide","fund")}>Fund another account</a>
 			                <br/>
-			                <a onClick={this.props.event.bind("slide","backtoinvest")}>Back to investments</a>
+			                <a onClick={this.props.event.bind("slide","backtoinvest")} className="default-color">Back to investments</a>
 			              </div>    
 			            </div>
 			          </div>

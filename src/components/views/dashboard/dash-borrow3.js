@@ -20,7 +20,7 @@ class DashboardBorrow3 extends React.Component {
 			                    	<a href="#" className="swiper-pagination-bullet"></a>
 			                    	<a href="#" className="swiper-pagination-bullet"></a>
 			                    </div>
-			                    <p className="no-margin is-warning">Home mortgage</p>
+			                   <p className="no-margin is-warning critical-text">Home mortgage <i class="fa fa-question question-mark"></i></p>
 			                    <h4 className="no-margin">You didn't quite like our first mortgage proposal, so we're finding something better.</h4>
 			                    <p className="no-margin" ><a onClick={this.props.borrowtab} ><i className="fa fa-mobile is-warning"></i></a>Expect a call to review in 1-2 days.</p>
 			                  </div>

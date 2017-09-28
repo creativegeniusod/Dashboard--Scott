@@ -59,12 +59,13 @@ class MortgageDocuments extends React.Component {
 				        	</div>
 				      	</div>
 				      	<div className="column is-one-third">
+				        	
 			        	<div className="box no-padding brand-box document-type">
 			        		<div className="message is-warning mb-0">
                           		<div className="message-header"></div>
                           	</div>
-                          	<h5><Link className="active" to="/mortgage-documents">My mortgage documents</Link></h5>
-                          	<h5><a href="#" onClick={e => this.setState({ visible:1})}>Inquire about reﬁnancing</a></h5>
+                          	<h5><Link className="active" to="/mortgage-documents">My mortgage documents<i className="fa fa-arrow-right float-right"></i></Link></h5>
+                          	<h5><a href="#" onClick={e => this.setState({ visible:1})}>Inquire about reﬁnancing<i className="fa fa-arrow-right float-right"></i></a></h5>
                           
                           	
 			        	</div>
@@ -99,7 +100,7 @@ class MortgageDocuments extends React.Component {
 				          <div className="column text-right warning-color"></div>
 				      </div>
 				      <div className="col pt-30">
-				        <a className="button is-warning" data-target="#modal" onClick={e => this.setState({ visible:2})}>Submit details</a>
+				        <a className="button is-warning" data-target="#modal" onClick={e => this.setState({ visible:2})}>Request refinancing</a>
 				        <a href="#" className="button inverse-btn" onClick={e => this.setState({ visible:0})}>Nevermind</a>
 				      </div>
 				    </div>

@@ -15,9 +15,9 @@ class DashboardProtector13 extends React.Component {
 				                    <div className="is-danger swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
 				                    	<p className="completed-message">Completed <i className="fa fa-check green-btn step7"></i></p>
 				                    </div>
-				                    <p className="no-margin is-danger">Critical illness:</p>
+				                    <p className="no-margin is-danger critical-text">Critical illness <i className="fa fa-question question-mark"></i></p>
 				                     
-				                    <h4 className="no-margin">Congratulations, Chris, you're insured.</h4>
+				                    <h4 className="no-margin pt-0 pb-10">Congratulations, Chris, you're insured.</h4>
 				                    <p className="no-margin">Your critical illness insurance policy is completed and will take effect in next 2-3 business days.</p>
 				                  </div>
 				              </div>
@@ -32,9 +32,9 @@ class DashboardProtector13 extends React.Component {
 				            <div className="message-header no-padding">
 				              <div className="full-width"> 
 				                  <div className="col">
-				                    <p className="no-margin is-danger">Disability:</p>
+				                    <p className="no-margin is-danger critical-text">Disability <i className="fa fa-question question-mark"></i></p>
 				                     
-				                    <h4 className="no-margin">Your disability insurance your policy is ready to review and sign.</h4>
+				                    <h4 className="no-margin pt-0 pb-10">Your disability insurance your policy is ready to review and sign.</h4>
 				                  </div>
 				              </div>
 				            </div>

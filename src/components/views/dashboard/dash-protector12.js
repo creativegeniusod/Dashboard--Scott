@@ -22,9 +22,9 @@ class DashboardProtector12 extends React.Component {
 				                    	<a href="#" className="swiper-pagination-bullet swiper-pagination-bullet-active"></a>
 				                    	<a href="#" className="swiper-pagination-bullet bold"></a>
 				                    </div>
-				                    <p className="no-margin is-danger">Critical illness:</p>
+				                    <p className="no-margin is-danger critical-text">Critical illness <i className="fa fa-question question-mark"></i></p>
 				                     
-				                    <h4 className="no-margin">We've received your signed policy and submitted it for final approval.</h4>
+				                    <h4 className="no-margin pt-0 pb-10">We've received your signed policy and submitted it for final approval.</h4>
 				                     <p className="no-margin"><a onClick={this.props.protecttab}><i className="fa fa-clock-o is-danger" ></i></a> If the povider has no issue with your final policy, your insurance will take effect. We'll let you know if anything comes up.</p>
 				                  </div>
 				              </div>
@@ -36,9 +36,9 @@ class DashboardProtector12 extends React.Component {
 				            <div className="message-header no-padding">
 				              <div className="full-width"> 
 				                  <div className="col">
-				                    <p className="no-margin is-danger">Disability:</p>
+				                    <p className="no-margin is-danger critical-text">Disability <i className="fa fa-question question-mark"></i></p>
 				                     
-				                    <h4 className="no-margin">Your disability insurance your policy is ready to review and sign.</h4>
+				                    <h4 className="no-margin pt-0 pb-10">Your disability insurance your policy is ready to review and sign.</h4>
 				                  </div>
 				              </div>
 				            </div>
