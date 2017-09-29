@@ -422,8 +422,7 @@ p.no-margin.heading { color: #3C4142; letter-spacing: normal; text-transform: no
 .default-color {color: inherit;display: table;margin: 10px auto 0;}
 
 .no-margin.is-danger.critical-text {color: #e56430;margin-top: 8px !important;opacity: 0.5;}
-.critical-text .fa.fa-question.question-mark {border: 1px solid grey; border-radius: 100%; color: grey; font-size: 12px; height: 17px; line-height: 16px;
-  text-align: center; width: 17px;}
+.critical-text .fa.fa-question.question-mark {border: 1px solid grey; border-radius: 100%; color: grey; font-size: 12px; height: 17px; line-height: 16px;text-align: center; width: 17px;margin: 5px 0 0;}
 .completed-message .step7 { margin: -2px 0 0 4px;}
 .default-font-size select {font-size: 16px;}
 .green-border select {border-color: #17a65c;}
