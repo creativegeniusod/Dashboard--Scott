@@ -97,7 +97,7 @@ class Header extends React.Component {
 				<li className="no-border pt-0 call-us">Burning question that cans wait? Give us a call: <span>1-800-PLANSWELL</span></li>
 			</ul>
 	    </div>
-	    <div className="container">
+	    <div className="container container-header">
             <nav className="navbar ">
 			  <div className="navbar-brand">
 				<Link to='/homeNew' className='navbar-item'> 

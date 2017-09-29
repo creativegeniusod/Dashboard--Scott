@@ -27,7 +27,7 @@ class FundTransfer extends React.Component {
 			            </p>
 			            <p>
 			              4. Setup a new payment from your account base on your pllan recommendation.
-			             	<div className="shadow-box"><p><span className="green-text">Your recommendation:</span> $418/month to your TFSA</p> </div>
+			             	<div className="shadow-box mt-10"><p><span className="green-text">Your recommendation:</span> $418/month to your TFSA</p> </div>
 			            </p>
 			            <p>
 			              5. Choose the monthly option under "Frequency" for your payment.     

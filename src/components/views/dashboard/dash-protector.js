@@ -24,7 +24,7 @@ class DashboardProtector extends React.Component {
 	                  </div>
 	              </article>
                   <div className="col btn-sec pt-10 pb-10">
-                  	<a className="button is-danger is-outlined" onClick={this.props.protecttab}>See if qualify</a>
+                  	<a className="button is-danger" onClick={this.props.protecttab}>See if qualify</a>
                   	<a className="align-right" onClick={this.props.popupstatus.bind("visible","already")}>i already have insurance</a>
                   </div>
 	           </div>
